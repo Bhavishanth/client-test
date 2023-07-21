@@ -153,10 +153,10 @@ const Video = () => {
     dispatch(dislike(currentUser?._id));
   };
 
-  const handleViews = async () => {
-    await axios.put(`/users/view/${currentVideo._id}`);
-    dispatch(views(currentUser?._id));
-  };
+  // const handleViews = async () => {
+  //   await axios.put(`/users/view/${currentVideo._id}`);
+  //   dispatch(view(currentUser?._id));
+  // };
 
 
   const handleSub = async () => {
