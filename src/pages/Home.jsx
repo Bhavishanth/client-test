@@ -13,7 +13,7 @@ const Home = ({type}) => {
 
   useEffect(() => {
     const fetchVideos = async () => {
-      const res = await axios.get(`/videos/${type}`);
+      const res = await axios.get(`https://server-test-o7ey.onrender.com/api/videos/${type}`);
       setVideos(res.data);
     };
     fetchVideos();
